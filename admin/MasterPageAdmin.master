@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageAdmin.master.cs" Inherits="admin_MasterPageAdmin" %>
+
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <asp:PlaceHolder ID="PlaceHolder1" runat="server">
+        <script src="<%: ResolveUrl("~/Scripts/modernizr-2.6.2.js") %>"></script>
+    </asp:PlaceHolder>
+    <meta name="viewport" content="width=device-width" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="fundoAdmin">
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server"></asp:ScriptManager>
+        <div class="pageAdmin">
+
+            <header>
+                <div class="title">
+                    <div>
+                        <h1 style="float: left;">
+                            <img src="../images/logo_adm_pequeno_v2.jpg" alt="" />&nbsp;Administração
+                        </h1>
+                        <div id="div_bt_compromissos" style="float: left; padding: 33px 0 0 7px;">
+                            <%--<img src="../images/notice.png" alt="" onclick="showStickyNoticeToast('TT');showStickyNoticeToast('AA');"
+                            style="cursor: pointer;"/>--%>
+                        </div>
+                    </div>
+                </div>
+                
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                 <div class="clear hideSkiplink">
+                    <telerik:RadMenu ID="RadMenu1" runat="server" Skin="Web20" Width="100%">
+                        <Items>
+                            <telerik:RadMenuItem runat="server" Text="PROCESSOS">
+                            </telerik:RadMenuItem>
+                            <telerik:RadMenuItem runat="server" Text="CADASTRAR CLIENTE">
+                            </telerik:RadMenuItem>
+                            <telerik:RadMenuItem runat="server" Text="IMOBILIÁRIAS">
+                            </telerik:RadMenuItem>
+                            <telerik:RadMenuItem runat="server" Text="AGENDA">
+                            </telerik:RadMenuItem>
+                        </Items>
+                    </telerik:RadMenu>
+                </div>
+            </header>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer class="footerRodapeAdmin">
+                <div class="content-wrapper">
+                    <div class="centralizarNaTela centralizarTexto">
+                        <p>
+                            &copy; <%: DateTime.Now.Year %> - My ASP.NET Application
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

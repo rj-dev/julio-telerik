@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d92d3fe46f774013a369d331a143d24c" Name="Diagram1">
+        <EntityTypeShape EntityType="excelenciaModel.acessos" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="excelenciaModel.administradores" Width="1.5" PointX="5.75" PointY="3.75" />
+        <EntityTypeShape EntityType="excelenciaModel.agenda" Width="1.5" PointX="5.75" PointY="6.75" />
+        <EntityTypeShape EntityType="excelenciaModel.avaliacao" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="excelenciaModel.cadastro" Width="1.5" PointX="3" PointY="1.125" />
+        <EntityTypeShape EntityType="excelenciaModel.financiamento" Width="1.5" PointX="7.75" PointY="3.75" />
+        <EntityTypeShape EntityType="excelenciaModel.historico_processo" Width="1.5" PointX="9.75" PointY="0.75" />
+        <EntityTypeShape EntityType="excelenciaModel.imobiliaria" Width="1.5" PointX="0.75" PointY="3.5" />
+        <EntityTypeShape EntityType="excelenciaModel.processos" Width="1.5" PointX="0.75" PointY="9.75" />
+        <EntityTypeShape EntityType="excelenciaModel.renda" Width="1.5" PointX="2.75" PointY="9.75" />
+        <EntityTypeShape EntityType="excelenciaModel.representantes" Width="1.5" PointX="9.75" PointY="4.75" />
+        <EntityTypeShape EntityType="excelenciaModel.usuario" Width="1.5" PointX="4.75" PointY="9.75" />
+        <EntityTypeShape EntityType="excelenciaModel.vendedor" Width="1.5" PointX="6.75" PointY="9.75" />
+        <AssociationConnector Association="excelenciaModel.cadastro_imobiliaria" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
